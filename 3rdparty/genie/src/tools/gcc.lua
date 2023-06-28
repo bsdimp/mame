@@ -12,9 +12,9 @@
 -- Set default tools
 --
 
-	premake.gcc.cc     = "gcc"
-	premake.gcc.cxx    = "g++"
-	premake.gcc.ar     = "ar"
+	premake.gcc.cc     = _OPTIONS["CC"]
+	premake.gcc.cxx    = _OPTIONS["CXX"]
+	premake.gcc.ar     = _OPTIONS["AR"]
 	premake.gcc.rc     = "windres"
 	premake.gcc.llvm   = false
 
