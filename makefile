@@ -447,9 +447,9 @@ PYTHON := $(PYTHON_EXECUTABLE)
 endif
 
 ifneq ($(TARGETOS),asmjs)
-CC := $(SILENT)gcc
-LD := $(SILENT)g++
-CXX:= $(SILENT)g++
+CC ?= $(SILENT)gcc
+LD ?= $(SILENT)g++
+CXX ?= $(SILENT)g++
 endif
 
 #-------------------------------------------------
@@ -1409,6 +1409,11 @@ freebsd_x86: generate $(PROJECTDIR)/$(MAKETYPE)-freebsd/Makefile
 
 $(PROJECTDIR)/$(MAKETYPE)-freebsd-clang/Makefile: makefile $(SCRIPTS) $(GENIE)
 	$(SILENT) $(GENIE) $(PARAMS) $(TARGET_PARAMS) --gcc=freebsd-clang --gcc_version=$(CLANG_VERSION) $(MAKETYPE)
+
+.PHONY: freebsd_arm64_clang
+freebsd_arm64_clang: generate $(PROJECTDIR)/$(MAKETYPE)-freebsd-clang/Makefile
+	$(SILENT) $(MAKE) -C $(PROJECTDIR)/$(MAKETYPE)-freebsd-clang config=$(CONFIG)64 precompile
+	$(SILENT) $(MAKE) -C $(PROJECTDIR)/$(MAKETYPE)-freebsd-clang config=$(CONFIG)64
 
 .PHONY: freebsd_x64_clang
 freebsd_x64_clang: generate $(PROJECTDIR)/$(MAKETYPE)-freebsd-clang/Makefile
