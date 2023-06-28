@@ -9,7 +9,7 @@
 ****************************************************************************/
 
 #include "corefile.h"
-#include "png.h"
+#include "localpng.h"
 
 #include "osdfile.h"
 

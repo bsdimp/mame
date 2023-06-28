@@ -11,7 +11,7 @@
 
 #include "emuopts.h"
 #include "fileio.h"
-#include "png.h"
+#include "localpng.h"
 
 // paper is A4 (210x297mm)
 #define PAPER_WIDTH         (210*10)

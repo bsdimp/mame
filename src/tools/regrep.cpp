@@ -9,7 +9,7 @@
 #include "corefile.h"
 #include "corestr.h"
 #include "path.h"
-#include "png.h"
+#include "localpng.h"
 #include "strformat.h"
 
 #include "osdcomm.h"

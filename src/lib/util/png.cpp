@@ -8,7 +8,7 @@
 
 ***************************************************************************/
 
-#include "png.h"
+#include "localpng.h"
 
 #include "ioprocs.h"
 #include "unicode.h"

@@ -20,7 +20,7 @@
 #include "icorender.h"
 
 #include "util/msdib.h"
-#include "util/png.h"
+#include "util/localpng.h"
 
 #include <algorithm>
 #include <cassert>

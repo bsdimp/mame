@@ -19,7 +19,7 @@
 #include "screen.h"
 
 #include "aviio.h"
-#include "png.h"
+#include "localpng.h"
 
 // MAMEOS headers
 #include "winmain.h"

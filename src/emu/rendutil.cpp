@@ -12,7 +12,7 @@
 #include "rendutil.h"
 
 #include "msdib.h"
-#include "png.h"
+#include "localpng.h"
 
 #include "jpeglib.h"
 #include "jerror.h"

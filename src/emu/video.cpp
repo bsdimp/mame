@@ -22,7 +22,7 @@
 
 #include "corestr.h"
 #include "path.h"
-#include "png.h"
+#include "localpng.h"
 #include "xmlfile.h"
 
 #include "osdepend.h"

@@ -13,7 +13,7 @@
 #include "screen.h"
 #include "emuopts.h"
 #include "fileio.h"
-#include "png.h"
+#include "localpng.h"
 #include "bitmap_printer.h"
 #include "corestr.h"
 
